@@ -98,57 +98,40 @@ function handleHashChange() {
 }
 
 // ============================================
-// Sample Decks (bundled for first-run experience)
+// Data Deck Files (auto-loaded on first run)
 // ============================================
 
-const SAMPLE_DECKS = [
-    {
-        name: "Quick Atmosphere",
-        coverImage: "",
-        options: [
-            { title: "Eerie Silence", description: "The air feels thick. No birds, no wind, nothing." },
-            { title: "Distant Thunder", description: "Rumbling on the horizon. Storm coming, or something else?" },
-            { title: "Purple Haze", description: "A violet mist rolls in, tasting of copper and old dreams." },
-            { title: "Singing Stones", description: "The rocks here hum a low frequency. Your teeth ache." },
-            { title: "Wrong Colors", description: "The sunset is green. The grass is red. Something is off." },
-            { title: "Time Skip", description: "You blink and an hour has passed. Or was it a minute?" },
-            { title: "Watchful Eyes", description: "Something observes from the tall grass. You never see it directly." },
-            { title: "Sweet Decay", description: "The smell of rotting fruit, but there's no fruit here." },
-            { title: "Shadow Lag", description: "Your shadow moves a half-second behind you." },
-            { title: "Memory Echo", description: "You remember being here before. You've never been here." }
-        ]
-    },
-    {
-        name: "Random NPC Archetypes",
-        coverImage: "",
-        options: [
-            { title: "The Retired Sword-Saint", archetype: "⚔️ Fighter", quirk: "Has killed more than they remember. Seeks quieter deaths now." },
-            { title: "Machine Whisperer", archetype: "🔧 Tinker", quirk: "Understands tech that shouldn't exist. Sometimes argues with dead engines." },
-            { title: "Former Merchant Prince", archetype: "🗣️ Diplomat", quirk: "Lost their kingdom to debt. Knows everyone's price, including their own." },
-            { title: "Color Prophet", archetype: "🔮 Mystic", quirk: "Sees futures in the purple grass. The grass lies, but rarely." },
-            { title: "Spice Merchant", archetype: "💰 Trader", quirk: "Knows the price of everything. Trades in cardamom and secrets." },
-            { title: "Wasteland Guide", archetype: "🌿 Survivor", quirk: "Knows which grass is food, which is poison, which is both." }
-        ]
-    }
+const DATA_DECK_FILES = [
+    'data/caravan-npcs.json',
+    'data/uvg-destinations.json',
+    'data/formigueiro-sombrio-bestiary.json'
 ];
 
 /**
- * Load sample decks on first run
+ * Load all deck files from data folder on first run
  */
-async function loadSampleDecks() {
+async function loadDataDecks() {
     const { hasDecks, importDeck } = await import('./storage.js');
-    
+
     if (await hasDecks()) {
         return; // Already has decks, don't overwrite
     }
-    
-    console.log('First run: loading sample decks');
-    
-    for (const deck of SAMPLE_DECKS) {
+
+    console.log('First run: loading data decks');
+
+    for (const filePath of DATA_DECK_FILES) {
         try {
-            await importDeck(deck);
+            const response = await fetch(filePath);
+            if (!response.ok) {
+                console.warn(`Failed to fetch ${filePath}: ${response.status}`);
+                continue;
+            }
+
+            const deckData = await response.json();
+            await importDeck(deckData);
+            console.log(`Loaded: ${deckData.name}`);
         } catch (error) {
-            console.error('Failed to load sample deck:', error);
+            console.error(`Failed to load ${filePath}:`, error);
         }
     }
 }
@@ -176,9 +159,9 @@ async function init() {
     try {
         // Initialize database
         await initDB();
-        
-        // Load sample decks on first run
-        await loadSampleDecks();
+
+        // Load data decks on first run
+        await loadDataDecks();
         
         // Register service worker for PWA
         await registerServiceWorker();

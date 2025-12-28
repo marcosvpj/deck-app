@@ -127,11 +127,13 @@ Fantasy theme using CSS custom properties in `css/styles.css`:
 - Color palette: parchment, sepia, gold, burgundy tones
 - Variables defined in `:root` for easy theming
 
-## Sample Decks
+## Data Decks Auto-Loading
 
-First-run experience: `app.js` loads 2 sample decks from `SAMPLE_DECKS` constant if IndexedDB is empty. This provides immediate value without requiring imports.
+First-run experience: `app.js` automatically fetches and imports all deck files listed in `DATA_DECK_FILES` array if IndexedDB is empty. This provides immediate value without requiring manual imports.
 
-Additional samples in `/data` folder (not auto-loaded, user must import manually).
+Data files are located in `/data` folder. To add a new deck to auto-loading:
+1. Add the JSON file to `/data` folder
+2. Add the file path to `DATA_DECK_FILES` array in `app.js`
 
 ## Key Principles
 
