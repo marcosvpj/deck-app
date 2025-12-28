@@ -86,11 +86,11 @@ function renderDangerZoneSection() {
                 fontSize: 'var(--font-size-sm)',
                 marginBottom: '1rem'
             }
-        }, 'Clear all app data including decks, cache, and reload from data files.'),
+        }, 'Delete all decks and reload data files from server.'),
         el('button', {
             className: 'btn btn-danger',
             onClick: handleClearAllData
-        }, '🗑️ Clear All Data & Reload')
+        }, '🗑️ Clear All Decks & Reload')
     );
 }
 
@@ -310,10 +310,9 @@ async function refreshDeckList() {
  */
 async function handleClearAllData() {
     const confirmed = confirmAction(
-        'Clear ALL app data and reload?\n\n' +
+        'Clear ALL decks and reload?\n\n' +
         'This will:\n' +
         '• Delete all imported decks\n' +
-        '• Clear app cache\n' +
         '• Reload data files from server\n\n' +
         'This cannot be undone.'
     );
@@ -323,33 +322,20 @@ async function handleClearAllData() {
     }
 
     try {
-        showToast('Clearing all data...', 'info');
+        showToast('Clearing data...', 'info');
 
-        // 1. Delete the database
+        // Delete the database
         await resetDatabase();
 
-        // 2. Clear all service worker caches
-        if ('caches' in window) {
-            const cacheNames = await caches.keys();
-            await Promise.all(
-                cacheNames.map(cacheName => caches.delete(cacheName))
-            );
-            console.log('Cleared service worker caches');
-        }
+        console.log('Database cleared, reloading...');
 
-        // 3. Unregister service worker (optional, will re-register on reload)
-        if ('serviceWorker' in navigator) {
-            const registrations = await navigator.serviceWorker.getRegistrations();
-            await Promise.all(
-                registrations.map(registration => registration.unregister())
-            );
-            console.log('Unregistered service workers');
-        }
+        // Give a moment for the toast to show, then reload
+        setTimeout(() => {
+            window.location.reload();
+        }, 500);
 
-        // 4. Reload the page to reinitialize everything
-        window.location.reload(true);
     } catch (error) {
-        console.error('Failed to clear all data:', error);
+        console.error('Failed to clear data:', error);
         showToast('Failed to clear data: ' + error.message, 'error');
     }
 }
