@@ -152,13 +152,16 @@ export function cardDisplay(card) {
     const elements = [
         createElement('h3', { className: 'drawn-card-title' }, card.title)
     ];
-    
-    if (card.description) {
+
+    // Description field (or 'visual' as alternative name)
+    const descriptionText = card.description || card.visual;
+    if (descriptionText) {
         elements.push(
-            createElement('p', { className: 'drawn-card-description' }, card.description)
+            createElement('p', { className: 'drawn-card-description' }, descriptionText)
         );
     }
-    
+
+    // Image field
     if (card.image) {
         elements.push(
             createElement('img', {
@@ -169,12 +172,23 @@ export function cardDisplay(card) {
             })
         );
     }
-    
-    // Handle any extra fields beyond title, description, image
-    const extraFields = Object.entries(card).filter(([key]) => 
-        !['title', 'description', 'image', '_originalIndex'].includes(key)
+
+    // Pose field (additional descriptive text, rendered separately from visual)
+    if (card.pose) {
+        elements.push(
+            createElement('p', {
+                className: 'drawn-card-pose',
+                style: { fontStyle: 'italic', marginTop: '0.5rem' }
+            }, card.pose)
+        );
+    }
+
+    // Handle any extra fields beyond the standard ones
+    const handledFields = ['title', 'description', 'visual', 'image', 'pose', '_originalIndex'];
+    const extraFields = Object.entries(card).filter(([key]) =>
+        !handledFields.includes(key)
     );
-    
+
     if (extraFields.length > 0) {
         const dl = createElement('dl', { className: 'drawn-card-extra' });
         for (const [key, value] of extraFields) {
@@ -183,7 +197,7 @@ export function cardDisplay(card) {
         }
         elements.push(dl);
     }
-    
+
     return createElement('div', { className: 'drawn-card' }, ...elements);
 }
 
