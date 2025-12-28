@@ -11,7 +11,7 @@
  */
 export function createElement(tag, attrs = {}, ...children) {
     const element = document.createElement(tag);
-    
+
     for (const [key, value] of Object.entries(attrs)) {
         if (key === 'className') {
             element.className = value;
@@ -22,6 +22,9 @@ export function createElement(tag, attrs = {}, ...children) {
             element.addEventListener(event, value);
         } else if (key === 'style' && typeof value === 'object') {
             Object.assign(element.style, value);
+        } else if (key === 'checked' || key === 'disabled') {
+            // Boolean properties must be set directly, not via setAttribute
+            element[key] = value;
         } else {
             element.setAttribute(key, value);
         }
