@@ -5,7 +5,7 @@
 import { el, renderApp, emptyState, backButton, showToast, confirmAction, clearElement } from '../ui.js';
 import { getAllDecks, importDeck, deleteDeck, resetDatabase } from '../storage.js';
 import { Deck } from '../deck.js';
-import { navigateTo } from '../app.js';
+import { navigateTo, DATA_DECK_FILES } from '../app.js';
 
 /**
  * Render the manage screen
@@ -21,6 +21,7 @@ export async function renderManageScreen() {
         el('div', { className: 'screen-content' },
             renderImportSection(),
             renderDeckListSection(decks),
+            renderDataFilesSection(),
             renderDangerZoneSection()
         )
     );
@@ -71,6 +72,26 @@ function renderImportSection() {
                 }, '📋 Paste from Clipboard')
             )
         )
+    );
+}
+
+/**
+ * Render the data files section
+ */
+function renderDataFilesSection() {
+    return el('section', { className: 'manage-section' },
+        el('h2', {}, 'Data Files'),
+        el('p', {
+            style: {
+                color: 'var(--color-brown)',
+                fontSize: 'var(--font-size-sm)',
+                marginBottom: '1rem'
+            }
+        }, 'Import or refresh default deck files from the server.'),
+        el('button', {
+            className: 'btn btn-secondary',
+            onClick: handleLoadDataFiles
+        }, '📥 Load Data Files')
     );
 }
 
@@ -302,6 +323,65 @@ async function refreshDeckList() {
         if (header && header.tagName === 'H2') {
             header.textContent = `Your Decks (${decks.length})`;
         }
+    }
+}
+
+/**
+ * Handle loading all data files from server
+ */
+async function handleLoadDataFiles() {
+    try {
+        showToast('Loading data files...', 'info');
+
+        let successCount = 0;
+        let errorCount = 0;
+        const results = [];
+
+        for (const filePath of DATA_DECK_FILES) {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    console.warn(`Failed to fetch ${filePath}: ${response.status}`);
+                    errorCount++;
+                    continue;
+                }
+
+                const deckData = await response.json();
+
+                // Validate the deck
+                const validation = Deck.validate(deckData);
+                if (!validation.valid) {
+                    console.error(`Invalid deck in ${filePath}:`, validation.errors);
+                    errorCount++;
+                    continue;
+                }
+
+                // Import the deck
+                await importDeck(deckData);
+                results.push(deckData.name);
+                successCount++;
+                console.log(`Loaded: ${deckData.name}`);
+            } catch (error) {
+                console.error(`Failed to load ${filePath}:`, error);
+                errorCount++;
+            }
+        }
+
+        // Refresh the deck list
+        await refreshDeckList();
+
+        // Show results
+        if (successCount > 0) {
+            const message = errorCount > 0
+                ? `Loaded ${successCount} deck(s), ${errorCount} failed`
+                : `Loaded ${successCount} deck(s) successfully`;
+            showToast(message, errorCount > 0 ? 'info' : 'success');
+        } else {
+            showToast('Failed to load any data files', 'error');
+        }
+    } catch (error) {
+        console.error('Failed to load data files:', error);
+        showToast('Failed to load data files: ' + error.message, 'error');
     }
 }
 

@@ -101,7 +101,7 @@ function handleHashChange() {
 // Data Deck Files (auto-loaded on first run)
 // ============================================
 
-const DATA_DECK_FILES = [
+export const DATA_DECK_FILES = [
     'data/caravan-npcs.json',
     'data/uvg-destinations.json',
     'data/formigueiro-sombrio-bestiary.json'
