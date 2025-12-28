@@ -1,0 +1,76 @@
+{
+    "name": "UVG Destinations",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "The Violet Heart",
+            "terrain": "♥ Grasslands",
+            "description": "The grasslands' center. Purple so deep it hurts to look at. Nomad shrines circle it. Nothing grows here except questions."
+        },
+        {
+            "title": "First Purple",
+            "terrain": "♥ Grasslands",
+            "description": "Where green grass becomes ultraviolet. The transition line is sharp, unnatural. You can stand with one foot in each world."
+        },
+        {
+            "title": "Wine-Stain Oasis",
+            "terrain": "♥ Grasslands",
+            "description": "Water tastes of fermentation. Purple reeds grow thick as walls. You hear singing that might be wind, might be nomads, might be neither."
+        },
+        {
+            "title": "Singing Pillars",
+            "terrain": "♥ Grasslands",
+            "description": "Stone monoliths vibrate with subsonic frequencies. Your teeth ache. Something watches from the purple grass, or maybe the pillars are watching."
+        },
+        {
+            "title": "The Crystal Markets",
+            "terrain": "♦ Rainbowlands",
+            "description": "Where traders from every nation gather. Or gathered. Or will gather. Time is negotiable here, and so is everything else."
+        },
+        {
+            "title": "Rainbow-Oil Springs",
+            "terrain": "♦ Rainbowlands",
+            "description": "Iridescent liquid bubbles from the ground. It reflects your face wrong. Smells like burnt sugar and ozone. Don't drink it."
+        },
+        {
+            "title": "Mirror-Glass Crossing",
+            "terrain": "♦ Rainbowlands",
+            "description": "The ground reflects sky so perfectly you can't tell up from down. Walk carefully or fall into yourself."
+        },
+        {
+            "title": "The Fallen Tower",
+            "terrain": "♣ Ruins",
+            "description": "It fell centuries ago but is still falling. You can watch it collapse in slow motion. Don't stand underneath."
+        },
+        {
+            "title": "Machine Garden",
+            "terrain": "♣ Ruins",
+            "description": "Rusted mechanisms grow like trees. Copper vines, iron flowers. Some pieces still move when you're not looking."
+        },
+        {
+            "title": "The Clockwork Ruins",
+            "terrain": "♣ Ruins",
+            "description": "Gears larger than houses, stopped mid-turn. The whole city was a machine. No one remembers what it did."
+        },
+        {
+            "title": "Reality Thin",
+            "terrain": "♠ Weird Zones",
+            "description": "The air shimmers. You can almost see through to somewhere else—a city? A desert? Gone before you can focus."
+        },
+        {
+            "title": "The Echo Plains",
+            "terrain": "♠ Weird Zones",
+            "description": "Your voice returns different. Sometimes in languages you don't speak. Sometimes before you've spoken."
+        },
+        {
+            "title": "The Distortion",
+            "terrain": "♠ Weird Zones",
+            "description": "Distance lies here. That hill is either a mile away or ten feet. The only way to know is to walk it. The answer changes each time."
+        },
+        {
+            "title": "The Black City",
+            "terrain": "🃏 Victory",
+            "description": "Towers of obsidian glass that drink light. Streets that lead everywhere and nowhere. You've arrived. The gate is open. It's always been open."
+        }
+    ]
+}

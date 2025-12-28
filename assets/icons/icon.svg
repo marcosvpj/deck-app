@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#2c1810"/>
+  
+  <!-- Card shape -->
+  <rect x="140" y="80" width="232" height="352" rx="16" fill="#f4e9d8" stroke="#b8860b" stroke-width="8"/>
+  
+  <!-- Card decoration - top -->
+  <circle cx="180" cy="130" r="24" fill="#722f37"/>
+  <circle cx="332" cy="130" r="24" fill="#722f37"/>
+  
+  <!-- Card decoration - center symbol -->
+  <path d="M256 200 L296 280 L256 360 L216 280 Z" fill="#b8860b"/>
+  <circle cx="256" cy="280" r="30" fill="#722f37"/>
+  
+  <!-- Card decoration - bottom -->
+  <circle cx="180" cy="382" r="24" fill="#722f37"/>
+  <circle cx="332" cy="382" r="24" fill="#722f37"/>
+</svg>
