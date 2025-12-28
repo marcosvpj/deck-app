@@ -1,0 +1,78 @@
+{
+    "name": "Mörk Borg: Atmosfera (1d12)",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Matadouro",
+            "roll": "1",
+            "descricao": "Sangue e ganchos.",
+            "interacao": "Vasculhar: Teste Resistência DR12. Falha: Vomita/Doença."
+        },
+        {
+            "title": "Capela Herege",
+            "roll": "2",
+            "descricao": "Ídolos profanos.",
+            "interacao": "Rezar: Teste Presença DR12. Sucesso: +1 Ômicron."
+        },
+        {
+            "title": "Scriptorium",
+            "roll": "3",
+            "descricao": "Papéis podres.",
+            "interacao": "Ler: Teste Presença DR14. Sucesso: Pergaminho Impuro."
+        },
+        {
+            "title": "Ossário",
+            "roll": "4",
+            "descricao": "Pilhas de ossos.",
+            "interacao": "Saquear: Gaste 1 Ômicron para achar 2d20 prata."
+        },
+        {
+            "title": "Fossa / Esgoto",
+            "roll": "5",
+            "descricao": "Fedor e lixo.",
+            "interacao": "Mergulhar: Teste Resistência DR14. Sucesso: Joia 50s."
+        },
+        {
+            "title": "Laboratório",
+            "roll": "6",
+            "descricao": "Frascos e fetos.",
+            "interacao": "Beber: 1-3 Veneno, 4-5 Alucinação, 6 Cura."
+        },
+        {
+            "title": "Arsenal",
+            "roll": "7",
+            "descricao": "Armas velhas.",
+            "interacao": "Procurar: Teste Agilidade DR12. Sucesso: Munição/Faca."
+        },
+        {
+            "title": "Jardim Fúngico",
+            "roll": "8",
+            "descricao": "Esporos luminosos.",
+            "interacao": "Colher: Teste Presença DR12. Sucesso: Ração."
+        },
+        {
+            "title": "Dormitório",
+            "roll": "9",
+            "descricao": "Camas mofadas.",
+            "interacao": "Descanso: Seguro para recuperar d4 PV."
+        },
+        {
+            "title": "Cisterna / Poço",
+            "roll": "10",
+            "descricao": "Água escura.",
+            "interacao": "Pescar: 50% chance de algo te puxar."
+        },
+        {
+            "title": "Tortura",
+            "roll": "11",
+            "descricao": "Serras e sangue seco.",
+            "interacao": "Ferramenta: Pega uma arma d4."
+        },
+        {
+            "title": "Sala Nobre",
+            "roll": "12",
+            "descricao": "Trono antigo.",
+            "interacao": "Sentar: Teste Presença DR10. Sucesso: +1 no próx. ataque."
+        }
+    ]
+}

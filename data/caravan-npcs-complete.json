@@ -1,0 +1,216 @@
+{
+    "name": "Caravan: NPCs (30 Cards)",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "The Retired Sword-Saint",
+            "archetype": "⚔️ Fighter",
+            "ability": "Combat test d20 ≤ (12+4×Fighters)",
+            "quirk": "Has killed more than they remember. Seeks quieter deaths now.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Nomad Duelist",
+            "archetype": "⚔️ Fighter",
+            "ability": "Combat test d20 ≤ (12+4×Fighters)",
+            "quirk": "Fights with twin daggers and wine-drunk confidence. Never loses bets.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Porcelain Guard",
+            "archetype": "⚔️ Fighter",
+            "ability": "Combat test d20 ≤ (12+4×Fighters)",
+            "quirk": "Wears fragments of their fallen noble. The porcelain whispers tactics.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Scarred Veteran",
+            "archetype": "⚔️ Fighter",
+            "ability": "Combat test d20 ≤ (12+4×Fighters)",
+            "quirk": "Lost an arm to the Purple Worm. Uses the remaining one very well.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Wall-Breaker",
+            "archetype": "⚔️ Fighter",
+            "ability": "Combat test d20 ≤ (12+4×Fighters)",
+            "quirk": "Carries a hammer meant for sieges. Asks questions after breaking things.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Machine Whisperer",
+            "archetype": "🔧 Tinker",
+            "ability": "Problem-solving test d20 ≤ (12+4×Tinkers)",
+            "quirk": "Understands tech that shouldn't exist. Sometimes argues with dead engines.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Cartographer",
+            "archetype": "🔧 Tinker",
+            "ability": "Problem-solving test d20 ≤ (12+4×Tinkers)",
+            "quirk": "Maps places that move. The maps are accurate, the places are not.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Ruin Scavenger",
+            "archetype": "🔧 Tinker",
+            "ability": "Problem-solving test d20 ≤ (12+4×Tinkers)",
+            "quirk": "Can make anything from three pieces of junk and spite.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Bridge-Builder",
+            "archetype": "🔧 Tinker",
+            "ability": "Problem-solving test d20 ≤ (12+4×Tinkers)",
+            "quirk": "Studied engineering in the Black City. Graduated before it fell.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Locksmith",
+            "archetype": "🔧 Tinker",
+            "ability": "Problem-solving test d20 ≤ (12+4×Tinkers)",
+            "quirk": "No door stays closed. No box stays locked. Ethics are... flexible.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Former Merchant Prince",
+            "archetype": "🗣️ Diplomat",
+            "ability": "Reroll any encounter OR +20% trade prices",
+            "quirk": "Lost their kingdom to debt. Knows everyone's price, including their own.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Caravan Translator",
+            "archetype": "🗣️ Diplomat",
+            "ability": "Reroll any encounter OR +20% trade prices",
+            "quirk": "Speaks twelve languages, including three that don't exist yet.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Smooth Talker",
+            "archetype": "🗣️ Diplomat",
+            "ability": "Reroll any encounter OR +20% trade prices",
+            "quirk": "Has never drawn a weapon. Has never needed to.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Envoy of the Lost Court",
+            "archetype": "🗣️ Diplomat",
+            "ability": "Reroll any encounter OR +20% trade prices",
+            "quirk": "Carries credentials from a kingdom that no longer exists. Still work.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Peacemaker",
+            "archetype": "🗣️ Diplomat",
+            "ability": "Reroll any encounter OR +20% trade prices",
+            "quirk": "Believes everyone is reasonable. Often proves themselves right.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Color Prophet",
+            "archetype": "🔮 Mystic",
+            "ability": "Test d20 ≤ (12+4×Mystics) on WEIRD encounters",
+            "quirk": "Sees futures in the purple grass. The grass lies, but rarely.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Stair Cultist",
+            "archetype": "🔮 Mystic",
+            "ability": "Test d20 ≤ (12+4×Mystics) on WEIRD encounters",
+            "quirk": "Counting towards enlightenment. Currently at 47,293.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Dream Reader",
+            "archetype": "🔮 Mystic",
+            "ability": "Test d20 ≤ (12+4×Mystics) on WEIRD encounters",
+            "quirk": "Interprets nightmares for profit. Sometimes causes them, accidentally.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Ghost Talker",
+            "archetype": "🔮 Mystic",
+            "ability": "Test d20 ≤ (12+4×Mystics) on WEIRD encounters",
+            "quirk": "Negotiates with the dead. They drive a hard bargain.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Void Monk",
+            "archetype": "🔮 Mystic",
+            "ability": "Test d20 ≤ (12+4×Mystics) on WEIRD encounters",
+            "quirk": "Meditated in the spaces between spaces. Came back... different.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Spice Merchant",
+            "archetype": "💰 Trader",
+            "ability": "Once/destination: gain 2d10 silver. Selling: +20%",
+            "quirk": "Knows the price of everything. Trades in cardamom and secrets.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Caravan Financier",
+            "archetype": "💰 Trader",
+            "ability": "Once/destination: gain 2d10 silver. Selling: +20%",
+            "quirk": "Keeps ledgers in three currencies, including one that's imaginary.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Bargain Hunter",
+            "archetype": "💰 Trader",
+            "ability": "Once/destination: gain 2d10 silver. Selling: +20%",
+            "quirk": "Never pays full price. Never sells for less. It's an art form.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Silk Road Veteran",
+            "archetype": "💰 Trader",
+            "ability": "Once/destination: gain 2d10 silver. Selling: +20%",
+            "quirk": "Been on every trade route twice. Some routes don't exist anymore.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Black Market Dealer",
+            "archetype": "💰 Trader",
+            "ability": "Once/destination: gain 2d10 silver. Selling: +20%",
+            "quirk": "Sells things that shouldn't be sold. Asks no questions. Tells no lies.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Wasteland Guide",
+            "archetype": "🌿 Survivor",
+            "ability": "Caravan uses −1 Supply/day (min 1). Stacks with other Survivors.",
+            "quirk": "Knows which grass is food, which is poison, which is both.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Hunter",
+            "archetype": "🌿 Survivor",
+            "ability": "Caravan uses −1 Supply/day (min 1). Stacks with other Survivors.",
+            "quirk": "Tracks things that leave no tracks. Hunts things with no bodies.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Herbalist",
+            "archetype": "🌿 Survivor",
+            "ability": "Caravan uses −1 Supply/day (min 1). Stacks with other Survivors.",
+            "quirk": "Every plant has a use. Every use has a price. Balance is everything.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "Desert Nomad",
+            "archetype": "🌿 Survivor",
+            "ability": "Caravan uses −1 Supply/day (min 1). Stacks with other Survivors.",
+            "quirk": "Lived in the wastes since birth. The purple grass knows their name.",
+            "supplyCost": "1/day"
+        },
+        {
+            "title": "The Forager",
+            "archetype": "🌿 Survivor",
+            "ability": "Caravan uses −1 Supply/day (min 1). Stacks with other Survivors.",
+            "quirk": "Finds food in ruins, water in stone, hope in nothing.",
+            "supplyCost": "1/day"
+        }
+    ]
+}

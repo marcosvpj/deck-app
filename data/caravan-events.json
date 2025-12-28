@@ -1,0 +1,132 @@
+{
+    "name": "Caravan: Events",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Fortune: Find Cache",
+            "naipe": "♥ Copas",
+            "tipo": "Fortune (Good Things)",
+            "descricao": "You stumble upon hidden supplies.",
+            "efeito": "+1d4 Supplies"
+        },
+        {
+            "title": "Fortune: Shortcut",
+            "naipe": "♥ Copas",
+            "tipo": "Fortune (Good Things)",
+            "descricao": "A faster path reveals itself.",
+            "efeito": "−1 day to destination"
+        },
+        {
+            "title": "Fortune: Good Omen",
+            "naipe": "♥ Copas",
+            "tipo": "Fortune (Good Things)",
+            "descricao": "Signs of hope on the horizon.",
+            "efeito": "+1 Morale"
+        },
+        {
+            "title": "Fortune: Helpful Stranger",
+            "naipe": "♥ Copas",
+            "tipo": "Fortune (Good Things)",
+            "descricao": "A traveler joins your cause.",
+            "efeito": "Draw 1 NPC, recruit free"
+        },
+        {
+            "title": "Misfortune: Storm / Delay",
+            "naipe": "♠ Espadas",
+            "tipo": "Misfortune (Bad Things)",
+            "descricao": "Weather or circumstance slows you down.",
+            "efeito": "Your choice: +1 day OR −1d4 Supplies"
+        },
+        {
+            "title": "Misfortune: Breakdown",
+            "naipe": "♠ Espadas",
+            "tipo": "Misfortune (Bad Things)",
+            "descricao": "Equipment failure threatens your supplies.",
+            "efeito": "Test 🔧 Tinker (d20 ≤12+4×Tinkers) or lose 1d4 Supplies"
+        },
+        {
+            "title": "Misfortune: Illness",
+            "naipe": "♠ Espadas",
+            "tipo": "Misfortune (Bad Things)",
+            "descricao": "Sickness spreads through the caravan.",
+            "efeito": "Test 🌿 Survivor (d20 ≤12+4×Survivors) or lose 1 Morale"
+        },
+        {
+            "title": "Misfortune: Deserter",
+            "naipe": "♠ Espadas",
+            "tipo": "Misfortune (Bad Things)",
+            "descricao": "Someone's faith wavers.",
+            "efeito": "If Morale <5, lose 1 random NPC"
+        },
+        {
+            "title": "Discovery: Ruins Nearby",
+            "naipe": "♣ Paus",
+            "tipo": "Discovery (Risk/Reward)",
+            "descricao": "Ancient structures beckon from the distance.",
+            "efeito": "Explore? Costs 1 day. Test 🔧 Tinker or 🔮 Mystic (d20 ≤12+4×archetype). Success: 2d20 silver + random item. Fail: Lose 1d4 Supplies."
+        },
+        {
+            "title": "Discovery: Injured Traveler",
+            "naipe": "♣ Paus",
+            "tipo": "Discovery (Risk/Reward)",
+            "descricao": "Someone lies wounded on the road.",
+            "efeito": "Help? Costs 2 Supplies. Reward: Draw 1 NPC (recruit free) OR +2 Morale"
+        },
+        {
+            "title": "Discovery: Strange Shortcut",
+            "naipe": "♣ Paus",
+            "tipo": "Discovery (Risk/Reward)",
+            "descricao": "A path that shouldn't exist offers faster travel.",
+            "efeito": "Take it? Test 🔮 Mystic (d20 ≤12+4×Mystics). Success: −2 days. Fail: +2 days (got lost in weirdness)"
+        },
+        {
+            "title": "Discovery: Backtracking Quest",
+            "naipe": "♣ Paus",
+            "tipo": "Discovery (Risk/Reward)",
+            "descricao": "A quest requires returning to a previous location.",
+            "efeito": "Shuffle destination discard. Draw 2-3 cards. Play normal encounters during backtracking. Complete objective at final location."
+        },
+        {
+            "title": "Oddity: Purple Rain",
+            "naipe": "♦ Ouros",
+            "tipo": "Oddity (Pure Atmosphere)",
+            "descricao": "Purple rain that doesn't wet you.",
+            "efeito": "No mechanical effect. Just weird. Log it."
+        },
+        {
+            "title": "Oddity: Singing Grass",
+            "naipe": "♦ Ouros",
+            "tipo": "Oddity (Pure Atmosphere)",
+            "descricao": "The grass sings in harmony.",
+            "efeito": "No mechanical effect. Just weird. Log it."
+        },
+        {
+            "title": "Oddity: Independent Shadow",
+            "naipe": "♦ Ouros",
+            "tipo": "Oddity (Pure Atmosphere)",
+            "descricao": "Your shadow moves independently.",
+            "efeito": "No mechanical effect. Just weird. Log it."
+        },
+        {
+            "title": "Oddity: Wrong Colors",
+            "naipe": "♦ Ouros",
+            "tipo": "Oddity (Pure Atmosphere)",
+            "descricao": "The sky cycles through colors that shouldn't exist.",
+            "efeito": "No mechanical effect. Just weird. Log it."
+        },
+        {
+            "title": "Oddity: Time Hiccup",
+            "naipe": "♦ Ouros",
+            "tipo": "Oddity (Pure Atmosphere)",
+            "descricao": "Did you lose 5 minutes or gain 5 years?",
+            "efeito": "No mechanical effect. Just weird. Log it."
+        },
+        {
+            "title": "Oddity: Carved Numbers",
+            "naipe": "♦ Ouros",
+            "tipo": "Oddity (Pure Atmosphere)",
+            "descricao": "Numbers appear carved on your equipment.",
+            "efeito": "No mechanical effect. Just weird. Log it."
+        }
+    ]
+}

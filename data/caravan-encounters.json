@@ -1,0 +1,134 @@
+{
+    "name": "Caravan: Encounters",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Hostile: Minor",
+            "naipe": "♥ Copas",
+            "valor": "2-5",
+            "tipo": "Combat Threat",
+            "descricao": "Bandits, beasts.",
+            "opcoes": "Ignore: −1d4 Supplies OR −1 Morale | Fight (⚔️): d20 ≤ (12+4×Fighters) | Flee (🌿): d20 ≤ (12+4×Survivors), +1 day | Talk (🗣️): Pay 2d10 silver"
+        },
+        {
+            "title": "Hostile: Standard",
+            "naipe": "♥ Copas",
+            "valor": "6-9",
+            "tipo": "Combat Threat",
+            "descricao": "Raiders, monsters.",
+            "opcoes": "Ignore: −1d6 Supplies AND −1 Morale | Fight (⚔️): Fail = also lose 1 NPC | Flee: Auto +2 days | Talk (🗣️): Pay 3d10 silver + 2 Supplies"
+        },
+        {
+            "title": "Hostile: Major",
+            "naipe": "♥ Copas",
+            "valor": "10-K",
+            "tipo": "Combat Threat",
+            "descricao": "Warlord, creature.",
+            "opcoes": "Cannot ignore! | Fight (⚔️): Fail = lose NPC + resources | Flee: +3 days, −1d6 Supplies | Talk (🗣️): Pay 50 silver + d20 ≤12 test"
+        },
+        {
+            "title": "Hostile: Legendary",
+            "naipe": "♥ Copas",
+            "valor": "Ás",
+            "tipo": "Combat Threat",
+            "descricao": "Epic encounter.",
+            "opcoes": "Use Oráculo for outcomes. This is a campaign-defining moment."
+        },
+        {
+            "title": "Trade: Poor Travelers",
+            "naipe": "♦ Ouros",
+            "valor": "2-5",
+            "tipo": "Commerce Opportunity",
+            "descricao": "Wandering merchants with little.",
+            "opcoes": "Buy supplies: 10s each | Sell goods: 50% value"
+        },
+        {
+            "title": "Trade: Caravan",
+            "naipe": "♦ Ouros",
+            "valor": "6-9",
+            "tipo": "Commerce Opportunity",
+            "descricao": "Proper trading caravan.",
+            "opcoes": "Buy supplies: 5s each | Sell goods: Full value | 💰 Trader: +20% on all transactions"
+        },
+        {
+            "title": "Trade: Rich Merchants",
+            "naipe": "♦ Ouros",
+            "valor": "10-K",
+            "tipo": "Commerce Opportunity",
+            "descricao": "Wealthy trading company.",
+            "opcoes": "Buy supplies: Normal | Sell goods: 150% value | Special goods available"
+        },
+        {
+            "title": "Trade: Hub / Black Market",
+            "naipe": "♦ Ouros",
+            "valor": "Ás",
+            "tipo": "Commerce Opportunity",
+            "descricao": "Major trading post or underground market.",
+            "opcoes": "Recruit NPC: Draw 3, pick 1, costs 20s | Rare goods available"
+        },
+        {
+            "title": "Neutral: Travelers",
+            "naipe": "♣ Paus",
+            "valor": "2-5",
+            "tipo": "Complications & Choices",
+            "descricao": "Travelers, refugees on the road.",
+            "opcoes": "Help: −2 Supplies, +1 Morale | Ignore: −1 Morale | Rob: +1d10 silver, −2 Morale, risk HOSTILE"
+        },
+        {
+            "title": "Neutral: Obstacle",
+            "naipe": "♣ Paus",
+            "valor": "6-9",
+            "tipo": "Complications & Choices",
+            "descricao": "Bridge, toll, storm blocking path.",
+            "opcoes": "Pay cost: (Varies) | Solve (🔧): Test to bypass free | Go around: +1 day"
+        },
+        {
+            "title": "Neutral: Rivals / Authorities",
+            "naipe": "♣ Paus",
+            "valor": "10-K",
+            "tipo": "Complications & Choices",
+            "descricao": "Competing caravan, local authorities, or quest-giver.",
+            "opcoes": "Competition: Test to win/tie | Quest: Accept side mission | Negotiate (🗣️): Find compromise"
+        },
+        {
+            "title": "Neutral: Major Choice",
+            "naipe": "♣ Paus",
+            "valor": "Ás",
+            "tipo": "Complications & Choices",
+            "descricao": "Crossroads decision with lasting consequences.",
+            "opcoes": "Use Oráculo. Lasting consequences for your caravan."
+        },
+        {
+            "title": "Weird: Minor Signs",
+            "naipe": "♠ Espadas",
+            "valor": "2-5",
+            "tipo": "Supernatural / UVG Strangeness",
+            "descricao": "Signs, glitches, minor strangeness.",
+            "opcoes": "Mystic (🔮): Small benefit | Ignore: Pure atmosphere, log it"
+        },
+        {
+            "title": "Weird: Reality Glitch",
+            "naipe": "♠ Espadas",
+            "valor": "6-9",
+            "tipo": "Supernatural / UVG Strangeness",
+            "descricao": "Moderate weirdness. Reality bends.",
+            "opcoes": "Mystic (🔮): d20 ≤(12+4×Mystics) | Success: Benefit (clue/item/shortcut) | Fail/Ignore: −1 Morale"
+        },
+        {
+            "title": "Weird: Portal / Entity",
+            "naipe": "♠ Espadas",
+            "valor": "10-K",
+            "tipo": "Supernatural / UVG Strangeness",
+            "descricao": "Major supernatural event. Portal, entity, or worse.",
+            "opcoes": "Mystic (🔮): Test as above | Success: Major benefit | Fail/Ignore: Curse or cost"
+        },
+        {
+            "title": "Weird: World-Altering",
+            "naipe": "♠ Espadas",
+            "valor": "Ás",
+            "tipo": "Supernatural / UVG Strangeness",
+            "descricao": "Reality tears. Campaign-changing event.",
+            "opcoes": "Campaign-level choice. Improvise something memorable."
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "name": "Mörk Borg: Conteúdo (Carta B)",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Inimigos Fracos",
+            "naipe": "♥ Copas",
+            "valor": "2-5",
+            "descricao": "Goblins, Vermes.",
+            "ia": "Berserk: Ataca sem defesa. (+1 Dano, mas você tem +1 para acertá-lo)."
+        },
+        {
+            "title": "Inimigos Padrão",
+            "naipe": "♥ Copas",
+            "valor": "6-9",
+            "descricao": "Guardas, Cultistas.",
+            "ia": "Berserk: Ataca sem defesa. (+1 Dano, mas você tem +1 para acertá-lo)."
+        },
+        {
+            "title": "Inimigos Elite",
+            "naipe": "♥ Copas",
+            "valor": "10-K",
+            "descricao": "Necromante, Troll.",
+            "ia": "Berserk: Ataca sem defesa. (+1 Dano, mas você tem +1 para acertá-lo)."
+        },
+        {
+            "title": "O CHEFE",
+            "naipe": "♥ Copas",
+            "valor": "Ás",
+            "descricao": "Boss da masmorra. Combate épico.",
+            "ia": "Berserk: Ataca sem defesa. (+1 Dano, mas você tem +1 para acertá-lo)."
+        },
+        {
+            "title": "Tesouro: Lixo",
+            "naipe": "♦ Ouros",
+            "valor": "2-5",
+            "descricao": "Restos, 1d10 Prata.",
+            "ia": "Ladrão: Tenta roubar item, desarmar ou fugir quando com 50% HP."
+        },
+        {
+            "title": "Tesouro: Útil",
+            "naipe": "♦ Ouros",
+            "valor": "6-9",
+            "descricao": "Ferramentas, 3d10 Prata.",
+            "ia": "Ladrão: Tenta roubar item, desarmar ou fugir quando com 50% HP."
+        },
+        {
+            "title": "Tesouro: Valioso",
+            "naipe": "♦ Ouros",
+            "valor": "10-K",
+            "descricao": "Arma, Armadura.",
+            "ia": "Ladrão: Tenta roubar item, desarmar ou fugir quando com 50% HP."
+        },
+        {
+            "title": "RELÍQUIA",
+            "naipe": "♦ Ouros",
+            "valor": "Ás",
+            "descricao": "Item lendário. Artefato poderoso.",
+            "ia": "Ladrão: Tenta roubar item, desarmar ou fugir quando com 50% HP."
+        },
+        {
+            "title": "Perigo: Estorvo",
+            "naipe": "♣ Paus",
+            "valor": "2-5",
+            "descricao": "Porta emperrada.",
+            "ia": "Tático: Usa o ambiente (empurra em buracos, derruba móveis)."
+        },
+        {
+            "title": "Perigo: Dano",
+            "naipe": "♣ Paus",
+            "valor": "6-9",
+            "descricao": "Dardos, Lâminas (d4).",
+            "ia": "Tático: Usa o ambiente (empurra em buracos, derruba móveis)."
+        },
+        {
+            "title": "Perigo: Mortal",
+            "naipe": "♣ Paus",
+            "valor": "10-K",
+            "descricao": "Gás, Esmagamento.",
+            "ia": "Tático: Usa o ambiente (empurra em buracos, derruba móveis)."
+        },
+        {
+            "title": "PUZZLE MORTAL",
+            "naipe": "♣ Paus",
+            "valor": "Ás",
+            "descricao": "Enigma com consequências letais.",
+            "ia": "Tático: Usa o ambiente (empurra em buracos, derruba móveis)."
+        },
+        {
+            "title": "Estranho: Sinais",
+            "naipe": "♠ Espadas",
+            "valor": "2-5",
+            "descricao": "Frio, sussurros.",
+            "ia": "Terror: Drena moral. Teste de Presença ou sofra Desvantagem."
+        },
+        {
+            "title": "Estranho: Lore",
+            "naipe": "♠ Espadas",
+            "valor": "6-9",
+            "descricao": "Diários, Pistas.",
+            "ia": "Terror: Drena moral. Teste de Presença ou sofra Desvantagem."
+        },
+        {
+            "title": "Estranho: Magia",
+            "naipe": "♠ Espadas",
+            "valor": "10-K",
+            "descricao": "Portal, Fantasma.",
+            "ia": "Terror: Drena moral. Teste de Presença ou sofra Desvantagem."
+        },
+        {
+            "title": "RITUAL / SAÍDA",
+            "naipe": "♠ Espadas",
+            "valor": "Ás",
+            "descricao": "Evento sobrenatural ou caminho de fuga.",
+            "ia": "Terror: Drena moral. Teste de Presença ou sofra Desvantagem."
+        }
+    ]
+}

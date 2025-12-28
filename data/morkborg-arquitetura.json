@@ -1,0 +1,39 @@
+{
+    "name": "Mörk Borg: Arquitetura (Carta A)",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Corredor Reto",
+            "naipe": "♠ Espadas",
+            "formato": "1 quadrado largura × Valor/2 comprimento",
+            "saidas": "2-5: 1 Saída | 6-9: 2 Saídas (Bifurcação) | 10: 3 Saídas | J/Q/K: Sem saída (ou Secreta)"
+        },
+        {
+            "title": "Corredor Tortuoso",
+            "naipe": "♣ Paus",
+            "formato": "Em L ou Z, ziguezagueante",
+            "saidas": "2-5: 1 Saída | 6-9: 2 Saídas (Bifurcação) | 10: 3 Saídas | J/Q/K: Sem saída (ou Secreta)"
+        },
+        {
+            "title": "Sala Construída",
+            "naipe": "♥ Copas",
+            "formato": "Retângulo/Quadrado. Área = Valor × 2",
+            "saidas": "2-5: 1 Saída | 6-9: 2 Saídas (Bifurcação) | 10: 3 Saídas | J/Q/K: Sem saída (ou Secreta)",
+            "conteudo": "Saque a CARTA B para conteúdo"
+        },
+        {
+            "title": "Caverna / Irregular",
+            "naipe": "♦ Ouros",
+            "formato": "Forma orgânica. Área visual = Valor",
+            "saidas": "2-5: 1 Saída | 6-9: 2 Saídas (Bifurcação) | 10: 3 Saídas | J/Q/K: Sem saída (ou Secreta)",
+            "conteudo": "Saque a CARTA B para conteúdo"
+        },
+        {
+            "title": "Sala Especial",
+            "naipe": "Ás (qualquer)",
+            "formato": "Santuário, Objetivo ou Saída da masmorra",
+            "saidas": "Conecta ao Objetivo principal",
+            "conteudo": "Saque a CARTA B para conteúdo"
+        }
+    ]
+}

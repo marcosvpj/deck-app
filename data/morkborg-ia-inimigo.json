@@ -1,0 +1,34 @@
+{
+    "name": "Mörk Borg: IA do Inimigo",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Berserk",
+            "naipe": "♥ Copas",
+            "comportamento": "Ataca sem defesa.",
+            "mecanica": "+1 Dano, mas você tem +1 para acertá-lo.",
+            "descricao": "Inimigo agressivo, sem medo. Avança direto, ignora táticas."
+        },
+        {
+            "title": "Ladrão",
+            "naipe": "♦ Ouros",
+            "comportamento": "Tenta roubar item, desarmar ou fugir.",
+            "mecanica": "Foge quando com 50% HP.",
+            "descricao": "Oportunista, covarde. Prioriza sobrevivência e lucro."
+        },
+        {
+            "title": "Tático",
+            "naipe": "♣ Paus",
+            "comportamento": "Usa o ambiente a seu favor.",
+            "mecanica": "Empurra em buracos, derruba móveis, usa cobertura.",
+            "descricao": "Inteligente, calculista. Explora o cenário para vantagem."
+        },
+        {
+            "title": "Terror",
+            "naipe": "♠ Espadas",
+            "comportamento": "Drena moral.",
+            "mecanica": "Teste de Presença ou sofra Desvantagem.",
+            "descricao": "Assustador, sobrenatural. Ataca a mente antes do corpo."
+        }
+    ]
+}

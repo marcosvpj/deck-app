@@ -1,0 +1,324 @@
+{
+    "name": "Caravan: Destinations (52+Joker)",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "The Violet Heart",
+            "carta": "♥ A",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "The grasslands' center. Purple so deep it hurts to look at. Nomad shrines circle it. Nothing grows here except questions."
+        },
+        {
+            "title": "First Purple",
+            "carta": "♥ 2",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Where green grass becomes ultraviolet. The transition line is sharp, unnatural. You can stand with one foot in each world."
+        },
+        {
+            "title": "Llama Grave Markers",
+            "carta": "♥ 3",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Bleached bones arranged in patterns. The locals bury their pack animals here. Or something buries them for the locals."
+        },
+        {
+            "title": "The Swaying Fields",
+            "carta": "♥ 4",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Endless grass moving without wind. The motion makes you dizzy. Follow the sway or make your own path?"
+        },
+        {
+            "title": "Wine-Stain Oasis",
+            "carta": "♥ 5",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Water tastes of fermentation. Purple reeds grow thick as walls. You hear singing that might be wind, might be nomads, might be neither."
+        },
+        {
+            "title": "The Nomad Crossroads",
+            "carta": "♥ 6",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Trade routes intersect. Wagon ruts in seven directions. Fresh tracks, but no caravans visible. They just left. Or they're just arriving."
+        },
+        {
+            "title": "Singing Pillars",
+            "carta": "♥ 7",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Stone monoliths vibrate with subsonic frequencies. Your teeth ache. Something watches from the purple grass, or maybe the pillars are watching."
+        },
+        {
+            "title": "The Cardamom Road",
+            "carta": "♥ 8",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "The grass here smells of spice. Nomad camps every few miles, abandoned but warm. They're always one step ahead of you."
+        },
+        {
+            "title": "Purple Rain Territory",
+            "carta": "♥ 9",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "The sky weeps violet. The rain doesn't wet you, it stains. Everything here is dyed. Including you, eventually."
+        },
+        {
+            "title": "The Horizon Throne",
+            "carta": "♥ 10",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "A chair carved from single stone, facing the setting sun. Whoever sat here last never left—their silhouette burned into the rock."
+        },
+        {
+            "title": "Mare's Milk Station",
+            "carta": "♥ J",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Nomad waystation. Fermented milk in clay jars. Llama pens empty but recently used. A fire still burns. Where did everyone go?"
+        },
+        {
+            "title": "The Color Fields",
+            "carta": "♥ Q",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Grass cycles through every shade of purple: lavender, violet, indigo, shades that don't have names. Don't stare too long."
+        },
+        {
+            "title": "The Last Nomad Camp",
+            "carta": "♥ K",
+            "terreno": "♥ Ultraviolet Grasslands",
+            "description": "Largest camp you've ever seen. Hundreds of tents, all abandoned. Food still warm. Tracks lead away in all directions at once."
+        },
+        {
+            "title": "The Crystal Markets",
+            "carta": "♦ A",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Where traders from every nation gather. Or gathered. Or will gather. Time is negotiable here, and so is everything else."
+        },
+        {
+            "title": "First Rainbow",
+            "carta": "♦ 2",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Where the grasslands meet strange colors. Oil slicks on water, but in the sky. The air tastes sweet and wrong."
+        },
+        {
+            "title": "Caravan Bones",
+            "carta": "♦ 3",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Wagon wheels half-buried in sand. Trade goods scattered, worthless now. No bodies—just empty clothes, neatly folded."
+        },
+        {
+            "title": "The Amber Road",
+            "carta": "♦ 4",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Path paved with fossilized resin. Insects and small creatures trapped inside, still moving. The road hums when you walk on it."
+        },
+        {
+            "title": "Spice Graveyard",
+            "carta": "♦ 5",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Sacks of pepper, saffron, cardamom left to rot. The smell is overwhelming. No one takes them. Why?"
+        },
+        {
+            "title": "The Counting Station",
+            "carta": "♦ 6",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Trade post where all goods are weighed, measured, counted three times. The scales work, but the numbers never match."
+        },
+        {
+            "title": "Porcelain Market",
+            "carta": "♦ 7",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Stalls abandoned but goods remain: pottery, spices, silk. Too neat. Too preserved. Someone maintains this. You never see them."
+        },
+        {
+            "title": "Rainbow-Oil Springs",
+            "carta": "♦ 8",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Iridescent liquid bubbles from the ground. It reflects your face wrong. Smells like burnt sugar and ozone. Don't drink it."
+        },
+        {
+            "title": "The Silk Crossroads",
+            "carta": "♦ 9",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Fabric banners from a hundred nations. Some nations don't exist anymore. The wind makes them whisper prices."
+        },
+        {
+            "title": "Mirror-Glass Crossing",
+            "carta": "♦ 10",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "The ground reflects sky so perfectly you can't tell up from down. Walk carefully or fall into yourself."
+        },
+        {
+            "title": "The Jeweler's Rest",
+            "carta": "♦ J",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Gemstones scattered like gravel. Real ones mixed with glass. You could spend days sorting them. Some people have. Some people still are."
+        },
+        {
+            "title": "The Counting House",
+            "carta": "♦ Q",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Stone building, door ajar. Inside: ledgers spanning centuries. All debts unpaid. All accounts unbalanced. Your name is already in one."
+        },
+        {
+            "title": "Color-Drunk Square",
+            "carta": "♦ K",
+            "terreno": "♦ Rainbowlands & Trade Routes",
+            "description": "Former marketplace. The colors here are impossible: hues between hues, shades that hurt. Traders went mad trying to name them."
+        },
+        {
+            "title": "The Black Gate",
+            "carta": "♣ A",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "First sight of it: obsidian walls that drink light. The gate is open. Has been for centuries. Will you enter?"
+        },
+        {
+            "title": "First Rubble",
+            "carta": "♣ 2",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Where the grasslands meet broken stone. Recent ruins or ancient? You can't tell. Both, maybe. Time works differently here."
+        },
+        {
+            "title": "The Fallen Tower",
+            "carta": "♣ 3",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "It fell centuries ago but is still falling. You can watch it collapse in slow motion. Don't stand underneath."
+        },
+        {
+            "title": "Collapsed Archive",
+            "carta": "♣ 4",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Papers everywhere, languages you don't know. The wind turns pages. Something important was recorded here. Past tense."
+        },
+        {
+            "title": "The Empty District",
+            "carta": "♣ 5",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Buildings intact but hollow. No furniture, no people, no signs of life. Just architecture, perfectly preserved, perfectly useless."
+        },
+        {
+            "title": "Machine Garden",
+            "carta": "♣ 6",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Rusted mechanisms grow like trees. Copper vines, iron flowers. Some pieces still move when you're not looking."
+        },
+        {
+            "title": "The Broken Plaza",
+            "carta": "♣ 7",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Once grand, now cracked. Water pools in stone that shouldn't hold water. Reflections show a different plaza, intact."
+        },
+        {
+            "title": "Ghost Road",
+            "carta": "♣ 8",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Paved street leading to nothing. You see afterimages of people walking it. They don't see you. They're stuck in their moment."
+        },
+        {
+            "title": "The Clockwork Ruins",
+            "carta": "♣ 9",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Gears larger than houses, stopped mid-turn. The whole city was a machine. No one remembers what it did."
+        },
+        {
+            "title": "Porcelain District",
+            "carta": "♣ 10",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Every building made of fired clay. Nobles frozen in ceramic, their painted eyes following you. Some are warm to the touch."
+        },
+        {
+            "title": "Fragment Quarter",
+            "carta": "♣ J",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Buildings half-phased into reality. You see three eras at once. Don't touch the walls—they'll pull you into the wrong time."
+        },
+        {
+            "title": "The Archive Engine",
+            "carta": "♣ Q",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Massive machine that recorded everything. Still running. Still recording. It's documenting your presence right now."
+        },
+        {
+            "title": "The Final Factory",
+            "carta": "♣ K",
+            "terreno": "♣ Ruins & Black City Outskirts",
+            "description": "Where they made the things that ended the world. Assembly lines frozen mid-production. The last widget sits incomplete."
+        },
+        {
+            "title": "The First Stair",
+            "carta": "♠ A",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Or the last, depending on direction. Descending takes you deeper into earth. Ascending takes you further from reality. Choose."
+        },
+        {
+            "title": "Step One",
+            "carta": "♠ 2",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "A single stair, descending into earth. You could follow it. Each step down takes you further from the surface world."
+        },
+        {
+            "title": "The Counting Stone",
+            "carta": "♠ 3",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Boulder carved with numbers: 1 through 847,293, then it stops. Blood on the chisel. Someone gave up. Or finished."
+        },
+        {
+            "title": "Reality Thin",
+            "carta": "♠ 4",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "The air shimmers. You can almost see through to somewhere else—a city? A desert? Gone before you can focus. Boundaries are negotiable here."
+        },
+        {
+            "title": "The Numbers Field",
+            "carta": "♠ 5",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Grass carved with equations. The math doesn't work in any system you know. It works in a system you're about to learn."
+        },
+        {
+            "title": "Staircase Fragment",
+            "carta": "♠ 6",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Steps going nowhere, carved with obsessive counting. The numbers skip. 744, 745, 746, 751. What happened to 747-750?"
+        },
+        {
+            "title": "The Echo Plains",
+            "carta": "♠ 7",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Your voice returns different. Sometimes in languages you don't speak. Sometimes before you've spoken."
+        },
+        {
+            "title": "Counting Fields",
+            "carta": "♠ 8",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Numbers carved into every surface. Pilgrims spent lifetimes here, seeking the final digit. None have found it. Some are still looking."
+        },
+        {
+            "title": "The Distortion",
+            "carta": "♠ 9",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Distance lies here. That hill is either a mile away or ten feet. The only way to know is to walk it. The answer changes each time."
+        },
+        {
+            "title": "Color Storm Territory",
+            "carta": "♠ 10",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "The sky cycles through impossible hues. Your shadow doesn't match your body. Time moves sideways. Stay too long and you'll be yesterday."
+        },
+        {
+            "title": "The Cult's Rest",
+            "carta": "♠ J",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Where stair-counters sleep. They dream of numbers. You can hear them counting in their sleep. They're all on different counts."
+        },
+        {
+            "title": "The Maze Stairs",
+            "carta": "♠ Q",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "They branch. They merge. They loop. Cultists map them obsessively. No two maps agree. All maps are correct."
+        },
+        {
+            "title": "The Last Stair",
+            "carta": "♠ K",
+            "terreno": "♠ The Long Long Stairs & Weird Zones",
+            "description": "Where the stairs finally end—or begin. Cultists gather here. They've been counting. The final number is different every time."
+        },
+        {
+            "title": "THE BLACK CITY",
+            "carta": "🃏 Joker",
+            "terreno": "🃏 Victory",
+            "description": "Towers of obsidian glass that drink light. Streets that lead everywhere and nowhere. You've arrived. The gate is open. It's always been open. What do you do now?"
+        }
+    ]
+}
