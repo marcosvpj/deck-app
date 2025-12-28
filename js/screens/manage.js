@@ -78,13 +78,15 @@ function renderImportSection() {
  * @param {Object[]} decks 
  */
 function renderDeckListSection(decks) {
+    const deckListChildren = decks.length === 0
+        ? [el('p', { style: { color: 'var(--color-brown)' } },
+            'No decks imported yet.')]
+        : decks.map(deck => renderDeckListItem(deck));
+
     return el('section', { className: 'manage-section' },
         el('h2', {}, `Your Decks (${decks.length})`),
         el('div', { className: 'deck-list', id: 'deck-list' },
-            decks.length === 0
-                ? el('p', { style: { color: 'var(--color-brown)' } }, 
-                    'No decks imported yet.')
-                : decks.map(deck => renderDeckListItem(deck))
+            ...deckListChildren
         )
     );
 }

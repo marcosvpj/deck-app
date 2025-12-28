@@ -1,0 +1,174 @@
+{
+    "name": "Bestiário: Formigueiro Sombrio",
+    "coverImage": "",
+    "options": [
+        {
+            "title": "Formiga Operária",
+            "nivel": "Fraco (2-5)",
+            "categoria": "🐜 Formiga",
+            "visual": "Menor que as outras, corpo alongado e ágil. Mãos/patas adaptadas para carregar objetos. Postura encurvada, sempre em movimento. Antenas longas e expressivas. Olhos grandes e nervosos.",
+            "pose": "Carregando tesouro/comida, olhando para trás com medo."
+        },
+        {
+            "title": "Formiga Soldado",
+            "nivel": "Padrão (6-9)",
+            "categoria": "🐜 Formiga",
+            "visual": "Corpo musculoso e intimidador. Mandíbulas hipertrofiadas (quase do tamanho da cabeça). Carapaça com placas reforçadas nos ombros e peito. Postura agressiva, pernas plantadas no chão. Cicatrizes de batalhas.",
+            "pose": "Mordida aberta, stance de luta, guardando entrada."
+        },
+        {
+            "title": "Formiga Rainha",
+            "nivel": "Chefe (Boss)",
+            "categoria": "🐜 Formiga",
+            "visual": "Gigantesca, abdômen inchado e translúcido (vê-se ovos dentro). Coroa natural de quitina na cabeça. Braços atrofiados (não precisa trabalhar). Asas vestigiais nas costas. Rodeada por soldados leais. Expressão de inteligência fria.",
+            "pose": "Sentada em trono de terra compactada, acariciando ovo."
+        },
+        {
+            "title": "Abelha Operária",
+            "nivel": "Fraco (2-5)",
+            "categoria": "🐝 Abelha",
+            "visual": "Corpo peludo, listras amarelas/pretas. Cestas de pólen nas pernas traseiras. Ferrão retrátil visível. Olhos compostos brilhantes. Expressão trabalhadora, focada.",
+            "pose": "Construindo favo de cera, coletando recursos."
+        },
+        {
+            "title": "Abelha Soldado / Zangão",
+            "nivel": "Padrão (6-9)",
+            "categoria": "🐝 Abelha",
+            "visual": "Maior, mais robusta. Ferrão permanentemente exposto (arma). Armadura natural de quitina polida. Sem cestas de pólen (só combate). Mandíbulas secundárias. Expressão agressiva.",
+            "pose": "Voando em patrulha, ferrão apontado pra frente."
+        },
+        {
+            "title": "Rainha das Abelhas",
+            "nivel": "Chefe (Boss)",
+            "categoria": "🐝 Abelha",
+            "visual": "Majestosa, corpo alongado e elegante. Asas iridescentes (arco-íris quando reflete luz). Ferrão enorme como espada. Coroa de cera real. Cercada por aura de feromônios (representar com névoa/linhas). Abdômen com padrão de favos.",
+            "pose": "Levitando/voando, enxame ao redor, pose real."
+        },
+        {
+            "title": "Besouro Comum",
+            "nivel": "Padrão (6-9)",
+            "categoria": "🪲 Besouro",
+            "visual": "Carapaça dura e brilhante (cores metálicas: verde, azul, roxo). Corpo compacto e largo. Asas élitras dobradas nas costas. Patas grossas e firmes. Antenas curtas.",
+            "pose": "Caminhada pesada, carapaça fechada (defensivo)."
+        },
+        {
+            "title": "Besouro Rinoceronte",
+            "nivel": "Elite (10-K)",
+            "categoria": "🪲 Besouro",
+            "visual": "Chifre frontal enorme (como lança). Carapaça ultra-espessa com rebites naturais. Corpo massivo, pernas de touro. Olhos pequenos (visão limitada, só carga). Marcas de impacto na armadura.",
+            "pose": "Investida, chifre baixo, poeira levantando."
+        },
+        {
+            "title": "Pernilongo Saqueador",
+            "nivel": "Fraco (2-5)",
+            "categoria": "🦟 Pernilongo",
+            "visual": "Corpo fino e alongado. Probóscide como agulha longa. Asas transparentes com veias visíveis. Pernas longas e articuladas. Olhos vermelhos. Postura de bailarino macabro.",
+            "pose": "Voando errático, probóscide estendida, segurando item roubado."
+        },
+        {
+            "title": "Pernilongo Enxame",
+            "nivel": "Grupo",
+            "categoria": "🦟 Pernilongo",
+            "visual": "Múltiplos pernilongos formando silhueta humanoide (tipo 'homem de abelhas'). Massa vibrante de corpos. Som visual (linhas de zumbido).",
+            "pose": "Nuvem informe atacando, alguns indivíduos destacados."
+        },
+        {
+            "title": "Centopeia Caçadora",
+            "nivel": "Elite (10-K)",
+            "categoria": "🐛 Outros Insetos",
+            "visual": "Corpo segmentado LONGO (serpentino). Dezenas de pernas de todos os lados. Mandíbulas venenosas frontais (presas). Corpo brilhante, quitina lisa. Olhos múltiplos pequenos. Rápida e fluida.",
+            "pose": "Enrolada em vítima, saindo de túnel lateral, corpo em S."
+        },
+        {
+            "title": "Vagalume Hipnótico",
+            "nivel": "Especial (♠ Terror)",
+            "categoria": "🐛 Outros Insetos",
+            "visual": "Corpo delicado, quase frágil. Abdômen ENORME e bioluminescente (lanterna natural). Luz pulsante em padrões (representar com círculos concêntricos). Asas translúcidas. Olhos vazios, quase cegos. Aura de luz suave.",
+            "pose": "Flutuando, luz pulsando, vítima hipnotizada olhando fixo."
+        },
+        {
+            "title": "Aranha-Fungo",
+            "nivel": "Tático (♣ 6-9)",
+            "categoria": "🕷️ Híbrido",
+            "visual": "Corpo de aranha (8 patas), mas coberto por cogumelos crescendo. Teias feitas de micélio (branco fibriloso). Cogumelos brotam das juntas. Olhos múltiplos cobertos por véu de esporos. Híbrido perturbador.",
+            "pose": "Tecendo teia de fungo, ou pendurada, cogumelos pingando esporos."
+        },
+        {
+            "title": "Cogumelo-Mago",
+            "nivel": "Estranho (♠ 6-9)",
+            "categoria": "🍄 Fungo Puro",
+            "visual": "Humanoide feito inteiramente de cogumelo. Chapéu largo como capuz de mago. Braços de hifas (fios finos entrelaçados). Rosto vago (buracos escuros para olhos/boca). Nuvem de esporos ao redor (aura mágica). Base do corpo se funde com chão.",
+            "pose": "Conjurando, braços erguidos, esporos circulando, expressão serena."
+        },
+        {
+            "title": "Puffball Explosivo",
+            "nivel": "Hazard (armadilha)",
+            "categoria": "🍄 Fungo Puro",
+            "visual": "Esfera fungal branca/bege. Superfície tensa, prestes a estourar. Pequenos poros começando a abrir. Cresce em cantos/tetos. Textura de papel fino esticado. Veias escuras visíveis sob a pele.",
+            "pose": "Estático, mas com linhas de tensão, momento antes da explosão."
+        },
+        {
+            "title": "Orelha-de-Pau Guardião",
+            "nivel": "Elite (♥ 10-K)",
+            "categoria": "🍄 Fungo Puro",
+            "visual": "Fungo massivo em forma de plataforma/escudo. Corpo largo, protuberâncias em camadas (como prateleiras). Textura amadeirada. Raízes grossas como pernas. 'Escudo' natural na frente. Expressão séria esculpida na superfície. Liquen crescendo nele.",
+            "pose": "Stance defensiva, escudo levantado, imóvel como árvore antiga."
+        },
+        {
+            "title": "Líquen Tóxico",
+            "nivel": "Hazard (armadilha)",
+            "categoria": "🍄 Fungo Puro",
+            "visual": "Camada fina cobrindo paredes/chão. Cores vivas e vibrantes (vermelho, laranja, verde-limão). Textura granulada. Padrões orgânicos (manchas, espirais). Brilho levemente úmido. Beleza perigosa.",
+            "pose": "Padrão decorativo, close-up da textura, mão tocando."
+        },
+        {
+            "title": "Mofo Corrosivo",
+            "nivel": "Hazard (ambiente)",
+            "categoria": "🍄 Fungo Puro",
+            "visual": "Camada esverdeada/acinzentada. Textura borbulhante (mini-crateras). Cresce em metal/madeira apodrecendo. Fios brancos saindo das bordas. Fumaça sutil subindo. Objetos meio-dissolvidos presos nele.",
+            "pose": "Cobrindo arma/armadura, corrosão em progresso, detalhes macro."
+        },
+        {
+            "title": "Zumbi-Cordyceps (Formiga)",
+            "nivel": "Terror (♠ 6-9)",
+            "categoria": "🧟 Infectado",
+            "visual": "Formiga soldado morta, mas andando. Cordyceps (fungo alongado) crescendo da cabeça/pescoço. Corpo rígido, movimentos erráticos. Olhos vazios, brancos. Hifas saindo das juntas. Cogumelo frutificando das costas. Expressão de agonia congelada.",
+            "pose": "Caminhada zumbi, cabeça inclinada pelo peso do fungo, braços tensos."
+        },
+        {
+            "title": "Zumbi-Cordyceps (Besouro)",
+            "nivel": "Terror (♠ 10-K)",
+            "categoria": "🧟 Infectado",
+            "visual": "Besouro elite infectado. Carapaça rachada, fungo brotando das fissuras. Chifre coberto por micélio. Corpo inchado, anormal. Líquido escuro vazando. Cordyceps gigante saindo do tórax. Ainda perigoso mesmo morto.",
+            "pose": "Agachado, prestes a explodir em esporos, corpo distorcido."
+        },
+        {
+            "title": "Abelha-Fungo (Simbiose)",
+            "nivel": "Especial (híbrido voluntário)",
+            "categoria": "🕷️ Híbrido",
+            "visual": "Abelha com cogumelos pequenos crescendo harmoniosamente no corpo. Não é zumbi - é simbiose. Favo de mel mesclado com micélio. Olhos normais mas com padrões de esporos. Beleza estranha. Menos terror, mais fascinação.",
+            "pose": "Voando graciosamente, esporos como trilha, expressão pacífica."
+        },
+        {
+            "title": "Rainha Abelha Infectada",
+            "nivel": "BOSS FINAL",
+            "categoria": "👑 Boss",
+            "visual": "Metade abelha rainha majestosa, metade cordyceps massivo. Lado esquerdo: abelha normal, bela, regal. Lado direito: fungo tomando conta, olho coberto, asa apodrecida. Expressão dividida: desespero/vazio. Cordyceps enorme saindo das costas como asas grotescas. Ainda usa coroa, mas coberta de esporos.",
+            "pose": "Pose trágica, mão boa estendida pedindo ajuda, lado infectado atacando."
+        },
+        {
+            "title": "Fungo-Mãe",
+            "nivel": "BOSS FINAL",
+            "categoria": "👑 Boss",
+            "visual": "Massa GIGANTE de fungos entrelaçados. Corpo central: cogumelo enorme com 'rosto' vago. Tentáculos de hifas se espalhando por toda câmara. Cogumelos menores crescendo ao redor (crias). Núcleo brilhante no centro (coração fúngico). Raízes profundas no chão. Atmosfera de catedral viva.",
+            "pose": "Ocupando sala inteira, tentáculos em todas direções, majestosa e alienígena."
+        },
+        {
+            "title": "Rainha Formiga Ancestral",
+            "nivel": "BOSS FINAL",
+            "categoria": "👑 Boss",
+            "visual": "Tão antiga que a câmara cresceu ao redor dela. Corpo parcialmente fundido com a terra. Abdômen MASSIVO, pulsante. Dezenas de soldados emergindo dela constantemente. Coroa de quitina fossilizada. Olhos cegos mas ainda consciente. Sabedoria cruel. Monumento vivo.",
+            "pose": "Imóvel no trono-útero, soldados saindo dela, expressão de rainha eterna."
+        }
+    ]
+}
