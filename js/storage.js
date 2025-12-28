@@ -16,7 +16,22 @@ let db = null;
  * @returns {Promise<IDBDatabase>}
  */
 export async function initDB() {
-    if (db) return db;
+    // Check if existing connection is still valid
+    if (db) {
+        try {
+            // Verify the object store exists
+            if (db.objectStoreNames.contains(STORE_NAME)) {
+                return db;
+            } else {
+                console.warn('Database exists but object store is missing, reinitializing...');
+                db.close();
+                db = null;
+            }
+        } catch (error) {
+            console.warn('Database connection invalid, reinitializing...');
+            db = null;
+        }
+    }
 
     return new Promise((resolve, reject) => {
         const request = indexedDB.open(DB_NAME, DB_VERSION);
@@ -27,16 +42,31 @@ export async function initDB() {
 
         request.onsuccess = (event) => {
             db = event.target.result;
+
+            // Verify object store exists after opening
+            if (!db.objectStoreNames.contains(STORE_NAME)) {
+                db.close();
+                reject(new Error('Database opened but object store not found'));
+                return;
+            }
+
             resolve(db);
         };
 
         request.onupgradeneeded = (event) => {
             const database = event.target.result;
-            
+
+            console.log('Upgrading database...');
+
             if (!database.objectStoreNames.contains(STORE_NAME)) {
                 const store = database.createObjectStore(STORE_NAME, { keyPath: 'id' });
                 store.createIndex('name', 'name', { unique: false });
+                console.log('Created object store:', STORE_NAME);
             }
+        };
+
+        request.onblocked = () => {
+            console.warn('Database upgrade blocked. Close other tabs using this app.');
         };
     });
 }
@@ -163,7 +193,7 @@ export async function hasDecks() {
  */
 export async function clearAllDecks() {
     const database = await initDB();
-    
+
     return new Promise((resolve, reject) => {
         const transaction = database.transaction([STORE_NAME], 'readwrite');
         const store = transaction.objectStore(STORE_NAME);
@@ -175,6 +205,35 @@ export async function clearAllDecks() {
 
         request.onerror = () => {
             reject(new Error('Failed to clear decks'));
+        };
+    });
+}
+
+/**
+ * Completely delete and reinitialize the database
+ * @returns {Promise<void>}
+ */
+export async function resetDatabase() {
+    // Close existing connection
+    if (db) {
+        db.close();
+        db = null;
+    }
+
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.deleteDatabase(DB_NAME);
+
+        request.onsuccess = () => {
+            console.log('Database deleted successfully');
+            resolve();
+        };
+
+        request.onerror = () => {
+            reject(new Error('Failed to delete database'));
+        };
+
+        request.onblocked = () => {
+            console.warn('Database deletion blocked. Close all tabs using this app.');
         };
     });
 }
