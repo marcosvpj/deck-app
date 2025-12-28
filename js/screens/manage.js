@@ -3,7 +3,7 @@
  */
 
 import { el, renderApp, emptyState, backButton, showToast, confirmAction, clearElement } from '../ui.js';
-import { getAllDecks, importDeck, deleteDeck } from '../storage.js';
+import { getAllDecks, importDeck, deleteDeck, resetDatabase } from '../storage.js';
 import { Deck } from '../deck.js';
 import { navigateTo } from '../app.js';
 
@@ -12,7 +12,7 @@ import { navigateTo } from '../app.js';
  */
 export async function renderManageScreen() {
     const decks = await getAllDecks();
-    
+
     const screen = el('div', { className: 'screen' },
         el('header', { className: 'screen-header' },
             backButton(() => navigateTo('home')),
@@ -20,10 +20,11 @@ export async function renderManageScreen() {
         ),
         el('div', { className: 'screen-content' },
             renderImportSection(),
-            renderDeckListSection(decks)
+            renderDeckListSection(decks),
+            renderDangerZoneSection()
         )
     );
-    
+
     renderApp(screen);
 }
 
@@ -56,7 +57,7 @@ function renderImportSection() {
                         accept: '.json,application/json',
                         onChange: handleImportFromFile
                     }),
-                    el('button', { 
+                    el('button', {
                         className: 'btn btn-secondary',
                         'aria-hidden': 'true'
                     }, '📁 Choose File')
@@ -70,6 +71,26 @@ function renderImportSection() {
                 }, '📋 Paste from Clipboard')
             )
         )
+    );
+}
+
+/**
+ * Render the danger zone section
+ */
+function renderDangerZoneSection() {
+    return el('section', { className: 'manage-section' },
+        el('h2', {}, 'Danger Zone'),
+        el('p', {
+            style: {
+                color: 'var(--color-brown)',
+                fontSize: 'var(--font-size-sm)',
+                marginBottom: '1rem'
+            }
+        }, 'Clear all app data including decks, cache, and reload from data files.'),
+        el('button', {
+            className: 'btn btn-danger',
+            onClick: handleClearAllData
+        }, '🗑️ Clear All Data & Reload')
     );
 }
 
@@ -281,5 +302,54 @@ async function refreshDeckList() {
         if (header && header.tagName === 'H2') {
             header.textContent = `Your Decks (${decks.length})`;
         }
+    }
+}
+
+/**
+ * Handle clearing all app data and reloading
+ */
+async function handleClearAllData() {
+    const confirmed = confirmAction(
+        'Clear ALL app data and reload?\n\n' +
+        'This will:\n' +
+        '• Delete all imported decks\n' +
+        '• Clear app cache\n' +
+        '• Reload data files from server\n\n' +
+        'This cannot be undone.'
+    );
+
+    if (!confirmed) {
+        return;
+    }
+
+    try {
+        showToast('Clearing all data...', 'info');
+
+        // 1. Delete the database
+        await resetDatabase();
+
+        // 2. Clear all service worker caches
+        if ('caches' in window) {
+            const cacheNames = await caches.keys();
+            await Promise.all(
+                cacheNames.map(cacheName => caches.delete(cacheName))
+            );
+            console.log('Cleared service worker caches');
+        }
+
+        // 3. Unregister service worker (optional, will re-register on reload)
+        if ('serviceWorker' in navigator) {
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            await Promise.all(
+                registrations.map(registration => registration.unregister())
+            );
+            console.log('Unregistered service workers');
+        }
+
+        // 4. Reload the page to reinitialize everything
+        window.location.reload(true);
+    } catch (error) {
+        console.error('Failed to clear all data:', error);
+        showToast('Failed to clear data: ' + error.message, 'error');
     }
 }
